@@ -22,6 +22,29 @@ if (form) {
 
   form.querySelector('button').disabled = false;
 
+  // Validate local selections only. A future private backend must revalidate uploads.
+  const photos = document.getElementById('photos');
+  const photoStatus = document.getElementById('photo-status');
+  const allowedTypes = ['image/jpeg', 'image/png', 'image/webp'];
+  const maxPhotoBytes = 5 * 1024 * 1024;
+
+  photos.addEventListener('change', () => {
+    const files = Array.from(photos.files);
+    let error = '';
+
+    if (files.length > 10) {
+      error = 'Please select no more than 10 photos.';
+    } else if (files.some((file) => !allowedTypes.includes(file.type))) {
+      error = 'Please select JPG, PNG, or WebP photos only.';
+    } else if (files.some((file) => file.size > maxPhotoBytes)) {
+      error = 'Each photo must be 5 MB or smaller.';
+    }
+
+    photos.setCustomValidity(error);
+    photoStatus.textContent = error ||
+      (files.length ? files.length + ' photo(s) selected locally. Nothing uploaded.' : '');
+  });
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
@@ -29,7 +52,7 @@ if (form) {
     const serviceName = form.elements.service.selectedOptions[0].textContent;
 
     status.textContent =
-      'Your draft includes ' + serviceName + '. ' +
+      'Your draft includes ' + serviceName + ' and ' + photos.files.length + ' photo(s). ' +
       'Preview only: nothing was sent or saved. ' +
       'Booking will become available once the contact method is configured.';
 
