@@ -1,43 +1,55 @@
 # Omar’s Property Services LLC website
 
-Exactly four pages, plain HTML/CSS and lightweight JavaScript. No dependencies or build step.
+Four pages, built with HTML, CSS, and lightweight JavaScript. No installation or build step is needed.
 
-## Preview on your computer
-1. Extract the ZIP.
-2. Open index.html in your browser. All four pages work from the folder.
-3. Try the service links and contact request preview. The form sends and stores nothing.
+## Preview
+Extract the ZIP and open index.html in your browser. Keep the assets folder alongside the four HTML files.
+The contact form is a local preview: it sends and saves nothing.
 
-## Put the source on GitHub (does not publish the website)
-1. Sign in to GitHub as OmarElghadban-code.
-2. Open https://github.com/new.
-3. Name: omars-property-services. Description: Four-page website for Omar’s Property Services LLC.
-4. Choose Private. Leave the README, license, and .gitignore initialization options unchecked because these files already exist.
-5. Click Create repository.
-6. On the empty repository page choose uploading an existing file. Drag the CONTENTS of this folder, including the assets folder, into the upload area. Keep index.html at the repository root.
-7. Use commit message: Add four-page website draft. Click Commit changes.
-8. Verify index.html, services.html, about.html, contact.html, assets/styles.css and assets/site.js are present.
-9. Do not enable GitHub Pages or connect Netlify yet.
+## Read and maintain the code
+- Each HTML page uses indented lines. Structural elements have their own lines; short text and inline elements stay together for readability.
+- assets/styles.css has one declaration per line. Change the seven color variables at the top to update the palette.
+- assets/site.js includes comments and expanded blocks for the form preview behavior.
+- Shared navigation and footer markup appears in each HTML file. Update all four copies if changing those elements.
+- Edit text inside HTML elements, and preserve the surrounding tags and links.
+- Add approved service details in services.html. Keep the matching summary and contact option consistent.
+- After editing, open all four pages and check the links, keyboard navigation, and phone-size layout.
 
-## Before publishing
-- Replace the bracketed contact placeholders in contact.html with verified details. If no public business address is appropriate, remove that entry rather than disclose a home address.
-- Confirm the service area and review service descriptions/scope.
-- Choose a real booking/contact method. The current form is a preview; connecting a backend or replacing it with the real booking link is required before accepting requests. Do not simply remove its warning.
-- Keep prices unpublished until confirmed. No prices, reviews, insurance claims, or credentials are invented.
-- Remove the noindex/nofollow meta tag from all four pages only when approved for public launch. This tag is not privacy protection; keep the repository private and do not deploy the draft.
-- Verify keyboard navigation, mobile layout, contact method, and all links.
+## Replace the version already uploaded to GitHub
+Your screenshot shows the site inside an omars-property-services folder within the repository.
+1. Open the repository’s Code tab, then click that inner omars-property-services folder.
+2. Choose Add file > Upload files.
+3. Drag the CONTENTS of the extracted replacement folder into the upload area. Include assets, the four HTML pages, and README.md. Do not drag the ZIP or the enclosing folder.
+4. Check that the paths match the existing files, so the upload replaces them instead of creating another nested folder.
+5. Commit with the message: Update website palette, content, and readable code.
+GitHub keeps earlier commits as a backup. This does not publish the website.
+
+## Before public launch
+- Replace the bracketed contact placeholders with verified details. Remove the address entry if no public business address is appropriate.
+- Confirm the service area, service descriptions, and actual task inclusions.
+- Choose and configure a real booking/contact method. The preview form cannot receive requests; its warning must remain until a working method replaces it.
+- Review the quote and scheduling language. No prices, credentials, insurance claims, or testimonials have been invented.
+- Remove the noindex/nofollow metadata from all four HTML files only when approved for launch. It does not provide privacy; avoid deploying the draft.
+- Verify the real contact method before launch.
 
 ## Hosting later
-Netlify Personal is the planned hosting choice. No hosting account, purchase, or deployment has been created. Confirm the current plan and price directly with Netlify before purchasing; the discussed $9/month is a planning figure. A future manual deployment can use this folder, or a Git-connected deployment can use the main branch with no build command and publish directory '.' (repository root). Connecting Git deployment can publish immediately, so wait for launch approval.
+GitHub holds the source. Netlify Personal is the planned hosting choice. No hosting purchase or deployment has been made.
+Verify the current Netlify plan and price before buying; the previously discussed $9/month is a planning figure.
+With the current nested repository layout, a future static deployment would use no build command and publish directory omars-property-services.
+If the files are later moved to the repository root, the publish directory would be a dot (.).
+Connecting automatic deployment can publish immediately, so wait until the site is approved.
 
-## May 2027 roadmap
-Add pressure washing and bundles within services.html when approved. Update the matching service summaries and contact options only once those offers are ready. Keep exactly four pages. No move-in/move-out cleaning or pressure washing is offered at launch.
+## May 2027
+Add pressure washing and bundles within the existing Services page only when approved and ready. Keep exactly four pages.
+Launch services remain residential standard cleaning, deep cleaning, pre-holiday cleaning, and small-office cleaning.
+Move-in/move-out cleaning and pressure washing are not offered at launch.
 
 ## Files
-index.html — Home
-services.html — Services
-about.html — About
-contact.html — Contact & Booking
-assets/styles.css — Responsive design
-assets/site.js — Local preview behavior
+- index.html: Home
+- services.html: Services and FAQs
+- about.html: About and approach
+- contact.html: Contact & Booking preview
+- assets/styles.css: Shared design and colors
+- assets/site.js: Local preview interactions
 
-Keep private company records, bank details, and operating agreements out of this repository.
+Keep company records, bank details, operating agreements, and secrets out of this repository.
