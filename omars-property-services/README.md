@@ -25,6 +25,13 @@ Your screenshot shows the site inside an omars-property-services folder within t
 GitHub keeps earlier commits as a backup. This does not publish the website.
 
 ## Before public launch
+The agreed introductory prices are now in services.html. Home prices use BOTH area and room-count limits.
+Office quotes use $45 per cleaner-hour internally, a $75 visit minimum, and a confirmed fixed total per visit.
+Photos are required before final quoting/job acceptance. The form validates local selections only;
+it does not upload anything. Connect private submission/storage before launch. Enforce the same file count,
+size, and type limits on the server, inspect actual content rather than trusting MIME declarations,
+keep images out of public URLs and GitHub, and decide access and deletion rules before receiving customer photos.
+
 - Replace the bracketed contact placeholders with verified details. Remove the address entry if no public business address is appropriate.
 - Confirm the service area, service descriptions, and actual task inclusions.
 - Choose and configure a real booking/contact method. The preview form cannot receive requests; its warning must remain until a working method replaces it.
