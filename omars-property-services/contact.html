@@ -78,8 +78,25 @@
               <option value="3">Pre-holiday cleaning</option>
               <option value="4">Small-office cleaning</option>
             </select>
+            <!-- Size and room details support manual quote review. -->
+            <label for="square-feet">Approximate area to clean (square feet)</label>
+            <input id="square-feet" name="squareFeet" type="number" min="1" step="1" required>
+            <label for="bedrooms">Bedrooms (enter 0 for a studio or office)</label>
+            <input id="bedrooms" name="bedrooms" type="number" min="0" step="1" required>
+            <label for="full-bathrooms">Full bathrooms or office restrooms</label>
+            <input id="full-bathrooms" name="fullBathrooms" type="number" min="0" step="1" required>
+            <label for="half-bathrooms">Half bathrooms (enter 0 if none)</label>
+            <input id="half-bathrooms" name="halfBathrooms" type="number" min="0" step="1" required>
             <label for="details">About your space</label>
             <textarea id="details" name="details" rows="4" maxlength="2000" placeholder="Space size, cleaning priorities, and preferred timing"></textarea>
+            <!-- Local selection only until a private submission service is connected. -->
+            <label for="photos">Photos of the areas to clean (required)</label>
+            <input id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple required aria-describedby="photo-help photo-status">
+            <p id="photo-help">Select 1–10 JPG, PNG, or WebP photos, up to 5 MB each.
+              Include an overview of every area and close-ups of buildup or problem spots.
+              Keep people, documents, and valuables out of your photos.
+              Preview only: selected photos stay on your device and are not uploaded.</p>
+            <p id="photo-status" role="status"></p>
             <button class="button" type="submit" disabled>Review request (preview)</button>
             <p id="form-status" class="status" role="status" tabindex="-1"></p>
           </form>
@@ -87,7 +104,9 @@
       </section>
       <section class="section booking-note">
         <h2>Before an appointment is confirmed</h2>
-        <p>Service scope, quote, date, and access arrangements all need confirmation. Please discuss any special requests, preparation needs, and supply arrangements directly.</p>
+        <p>Photos are required before we confirm your quote and accept the job.
+          If you cannot provide photos, contact us to discuss an alternative assessment before booking.
+          Service scope, final price, date, and access arrangements all need confirmation.</p>
       </section>
     </main>
     <footer>
