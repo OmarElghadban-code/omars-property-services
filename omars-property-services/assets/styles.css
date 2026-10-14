@@ -9,6 +9,41 @@
   --border: #ddd6c9;
 }
 
+/* Pricing tables scroll inside their region on narrow screens. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+caption {
+  text-align: left;
+  padding-bottom: 12px;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+
+thead {
+  background: var(--text);
+  color: #fff;
+}
+
+.price-highlight {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 /* Base styles, navigation, layout, and responsive rules */
 * {
   box-sizing: border-box
