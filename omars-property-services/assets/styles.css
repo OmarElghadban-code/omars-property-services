@@ -45,6 +45,90 @@ thead {
 }
 
 /* Base styles, navigation, layout, and responsive rules */
+/* Homepage: light background, editorial image, restrained brand accents. */
+.home-page .hero {
+  grid-template-columns: 0.95fr 1.2fr;
+  gap: 48px;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+
+.home-page h1 {
+  font-size: clamp(42px, 4.5vw, 64px);
+  letter-spacing: -2px;
+}
+
+.hero-photo {
+  margin: 0;
+  min-width: 0;
+  position: relative;
+}
+
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 85px;
+  height: 85px;
+  background: var(--yellow);
+  border-radius: 0 18px 0 0;
+  z-index: -1;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 8px 90px 8px 8px;
+}
+
+.hero-photo figcaption {
+  padding-top: 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.home-page .services-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.home-page .service {
+  margin: 0;
+  padding: 30px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 6px;
+}
+
+.home-page .service .number {
+  margin-bottom: 22px;
+}
+
+.home-page .service p {
+  min-height: 0;
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 40px;
+  }
+
+  .home-page .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo img {
+    height: auto;
+    aspect-ratio: 3 / 2;
+    border-top-right-radius: 55px;
+  }
+}
+
 * {
   box-sizing: border-box
 }
