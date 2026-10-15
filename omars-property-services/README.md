@@ -48,7 +48,7 @@ Connecting automatic deployment can publish immediately, so wait until the site 
 
 ## May 2027
 Add pressure washing and bundles within the existing Services page only when approved and ready. Keep exactly four pages.
-Launch services remain residential standard cleaning, deep cleaning, pre-holiday cleaning, and small-office cleaning.
+Launch services remain residential standard cleaning, deep cleaning, and small-office cleaning.
 Move-in/move-out cleaning and pressure washing are not offered at launch.
 
 ## Files
@@ -60,3 +60,8 @@ Move-in/move-out cleaning and pressure washing are not offered at launch.
 - assets/site.js: Local preview interactions
 
 Keep company records, bank details, operating agreements, and secrets out of this repository.
+
+## Cleaning scope and imagery
+The standard and deep cleaning checklists appear in services.html; confirm they match your intended work before launch.
+New illustrative kitchen and office images are AI-created with the built-in image tool and labeled on each page.
+Replace them with approved actual work photos when available. The decorative yellow homepage square has been removed.

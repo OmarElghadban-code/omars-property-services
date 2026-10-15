@@ -13,7 +13,7 @@ const form = document.getElementById('request-form');
 if (form) {
   const query = new URLSearchParams(window.location.search);
   const selectedService = query.get('service');
-  const validServices = ['1', '2', '3', '4'];
+  const validServices = ['1', '2', '4'];
 
   // Service-page links can preselect an option on the contact page.
   if (validServices.includes(selectedService)) {

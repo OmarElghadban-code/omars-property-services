@@ -64,18 +64,6 @@ thead {
   position: relative;
 }
 
-.hero-photo::before {
-  content: '';
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  width: 85px;
-  height: 85px;
-  background: var(--yellow);
-  border-radius: 0 18px 0 0;
-  z-index: -1;
-}
-
 .hero-photo img {
   display: block;
   width: 100%;
@@ -834,5 +822,47 @@ aside ul {
   .steps,.approach-grid {
     grid-template-columns: 1fr;
     gap: 25px
+  }
+}
+
+/* Supporting page imagery */
+.page-photo {
+  max-width: 1152px;
+  margin: 20px auto 45px;
+  padding: 0 5%;
+}
+
+.page-photo img {
+  display: block;
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.page-photo figcaption,
+.contact-photo figcaption {
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 8px;
+}
+
+.contact-photo {
+  margin: 0 0 25px;
+}
+
+.contact-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.home-page .services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .home-page .services-grid {
+    grid-template-columns: 1fr;
   }
 }
