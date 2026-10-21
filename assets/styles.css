@@ -707,3 +707,78 @@ input:focus,select:focus,textarea:focus {
 
 }
 
+
+/* Prominent, accessible contact and social links */
+.footer-contact,
+.contact-links {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #c9e4e9;
+  border-radius: 12px;
+  background: #f2fbfc;
+  color: #0b2440;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  transition: background .2s, transform .2s;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  background: #d8f4f7;
+  color: #075f6b;
+  transform: translateY(-1px);
+}
+
+.contact-icon {
+  display: inline-flex;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-link--instagram .contact-icon { color: #b52a85; }
+.contact-link--facebook .contact-icon { color: #1877f2; }
+.contact-link--google .contact-icon { color: #4285f4; }
+.contact-link--phone .contact-icon,
+.contact-link--email .contact-icon { color: #078391; }
+.contact-arrow { margin-left: auto; opacity: .65; }
+
+.footer .contact-link {
+  background: #102f50;
+  color: #fff;
+  border-color: #30536b;
+}
+
+.footer .contact-link:hover,
+.footer .contact-link:focus-visible {
+  background: #164a63;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .contact-link { width: 100%; font-size: .9rem; }
+}
