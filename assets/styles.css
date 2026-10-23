@@ -782,3 +782,44 @@ input:focus,select:focus,textarea:focus {
 @media (max-width: 640px) {
   .contact-link { width: 100%; font-size: .9rem; }
 }
+
+.booking-policy {
+  max-width: 900px;
+  padding: 34px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.booking-policy h3 {
+  margin: 24px 0 8px;
+}
+
+.booking-policy h3:first-child {
+  margin-top: 0;
+}
+
+.booking-policy p {
+  margin-bottom: 12px;
+}
+
+.booking-policy .policy-note {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: .9rem;
+}
+
+.booking-policy-link {
+  margin-top: 18px;
+  font-size: .94rem;
+}
+
+.booking-policy-link a {
+  color: var(--teal-dark);
+  font-weight: 750;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .booking-policy { padding: 24px; }
+}
