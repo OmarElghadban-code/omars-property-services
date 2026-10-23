@@ -24,14 +24,4 @@ if (serviceSelect && ["standard", "deep", "office"].includes(selectedService)) {
   serviceSelect.value = selectedService;
 }
 
-// The quote form is a preview until online booking is connected.
-const quoteForm = document.getElementById("quote-form");
-if (quoteForm) {
-  quoteForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const status = document.getElementById("form-status");
-    if (status) {
-      status.textContent = "This is a preview only. Your request has not been sent. Online booking will be available after setup.";
-    }
-  });
-}
+// Quote requests are submitted directly to Formspree using the form action.
