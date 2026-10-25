@@ -20,7 +20,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const selectedService = searchParams.get("service");
 const serviceSelect = document.getElementById("service");
 
-if (serviceSelect && ["standard", "deep", "office"].includes(selectedService)) {
+if (serviceSelect && ["standard", "deep", "office", "move-out"].includes(selectedService)) {
   serviceSelect.value = selectedService;
 }
 
